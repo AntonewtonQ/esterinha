@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  font-family: "Poppins", sans-serif;
+  color-scheme: dark;
+}
+
+*{
+  @apply m-0 p-0 box-border;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  animation: fall 3s infinite ease-in-out;
+  opacity: 0;
+}
+
+.confetti-1 { left: 10%; background-color: #f9c74f; animation-delay: 0.1s; }
+.confetti-2 { left: 20%; background-color: #f94144; animation-delay: 0.2s; }
+.confetti-3 { left: 30%; background-color: #90be6d; animation-delay: 0.3s; }
+.confetti-4 { left: 40%; background-color: #577590; animation-delay: 0.4s; }
+.confetti-5 { left: 50%; background-color: #f3722c; animation-delay: 0.5s; }
+.confetti-6 { left: 60%; background-color: #f8961e; animation-delay: 0.6s; }
+.confetti-7 { left: 70%; background-color: #f9844a; animation-delay: 0.7s; }
+.confetti-8 { left: 80%; background-color: #43aa8b; animation-delay: 0.8s; }
+.confetti-9 { left: 90%; background-color: #577590; animation-delay: 0.9s; }
+.confetti-10 { left: 15%; background-color: #f9c74f; animation-delay: 0.25s; }
+.confetti-11 { left: 25%; background-color: #f94144; animation-delay: 0.35s; }
+.confetti-12 { left: 35%; background-color: #90be6d; animation-delay: 0.45s; }
+.confetti-13 { left: 45%; background-color: #577590; animation-delay: 0.55s; }
+.confetti-14 { left: 55%; background-color: #f3722c; animation-delay: 0.65s; }
+.confetti-15 { left: 65%; background-color: #f8961e; animation-delay: 0.75s; }
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
