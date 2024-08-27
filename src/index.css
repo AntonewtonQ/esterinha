@@ -19,6 +19,7 @@
   height: 20px;
   animation: fall 3s infinite ease-in-out;
   opacity: 0;
+  z-index: 20; /* Garantindo que os confetes fiquem na frente */
 }
 
 .confetti-1 { left: 10%; background-color: #f9c74f; animation-delay: 0.1s; }
